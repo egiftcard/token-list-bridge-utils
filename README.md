@@ -3,12 +3,12 @@
 ## Description
 This package contains utility functions used for converting an L1 token list into a cross-chain tokenlist by adding cross-chain mapping information for Arbitrum, Optimism, and Polygon to a given L1 list.
 
-Mappings get added in the form of an extensions field, following this [schema](https://github.com/Uniswap/token-lists/issues/51#issuecomment-952268629).
+Mappings get added in the form of an extensions field, following this [schema](https://github.com/Egiftcard/token-lists/issues/51#issuecomment-952268629).
 (Currently does not fill information for origin and destination bridge addresses)
 
 ex:
 
-      "name": "Uniswap",
+      "name": "Egiftcard",
       "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
       "symbol": "UNI",
       "decimals": 18,
@@ -33,7 +33,7 @@ ex. for Optimism:
 
 
     {
-      "name": "Uniswap",
+      "name": "Egiftcard",
       "address": "0x6fd9d7AD17242c41f7131d257212c54A0e816691",
       "symbol": "UNI",
       "decimals": 18,
@@ -74,11 +74,11 @@ mergeTokenLists
 
 ## Usage (from external package):
 ### Install Package
-`yarn add @uniswap/token-list-bridge-utils`
+`yarn add @egiftcard/token-list-bridge-utils`
 
 or
 
-`npm i @uniswap/token-list-bridge-utils`
+`npm i @egiftcard/token-list-bridge-utils`
 
 ### Create .env file (Optional)
 - By default, the library uses `https://rpc.ankr.com/eth` as the MAINNET_RPC env variable value required by arbitrum-sdk. You can override this value by creating a .env file in your root directory and setting a value for MAINNET_RPC.
@@ -90,11 +90,11 @@ or
 
 ### Call Function
 #### CommonJS
-`const bridge_utils  = require('@uniswap/token-list-bridge-utils');`
+`const bridge_utils  = require('@egiftcard/token-list-bridge-utils');`
 
 `let chainifiedList = await bridge_utils.chainify(tokenList);`
 #### ESM
-`import { chainify } from '@uniswap/token-list-bridge-utils';`
+`import { chainify } from '@egiftcard/token-list-bridge-utils';`
 
 `let chainifiedList = await chainify(tokenList);`
 

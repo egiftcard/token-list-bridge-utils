@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@egiftcard/sdk-core'
 import { ChainId } from './chainId'
 
 export const COINBASE_WRAPPED_STAKED_ETH = new Token(

@@ -1,5 +1,5 @@
-import { Token } from '@uniswap/sdk-core'
-import { TokenInfo, TokenList } from '@uniswap/token-lists'
+import { Token } from '@egiftcard/sdk-core'
+import { TokenInfo, TokenList } from '@egiftcard/token-lists'
 import { ChainId } from '../constants/chainId'
 import {
   DAI,
